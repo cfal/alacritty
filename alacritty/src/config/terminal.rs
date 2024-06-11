@@ -12,6 +12,8 @@ pub struct Terminal {
     pub osc52: SerdeOsc52,
     /// Path to a shell program to run on startup.
     pub shell: Option<Program>,
+    /// OSC52 - allow without focus
+    pub osc52_allow_without_focus: bool,
 }
 
 #[derive(SerdeReplace, Serialize, Default, Copy, Clone, Debug, PartialEq)]
